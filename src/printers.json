@@ -1,0 +1,40 @@
+{
+  "printers": [
+    {
+      "local_1": [
+        {
+          "location": "",
+          "model": "",
+          "ipAddress": "",
+          "serialNumber": "",
+          "macNumber": ""
+        },
+        {
+          "location": "",
+          "model": "",
+          "ipAddress": "",
+          "serialNumber": "",
+          "macNumber": ""
+        }
+      ]
+    },
+    {
+      "local_2": [
+        {
+          "location": "",
+          "model": "",
+          "ipAddress": "",
+          "serialNumber": "",
+          "macNumber": ""
+        },
+        {
+          "location": "",
+          "model": "",
+          "ipAddress": "",
+          "serialNumber": "",
+          "macNumber": ""
+        }
+      ]
+    }
+  ]
+}

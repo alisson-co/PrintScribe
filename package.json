@@ -1,0 +1,21 @@
+{
+  "name": "getdata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "exceljs": "^4.3.0",
+    "puppeteer": "^20.5.0",
+    "typescript": "^5.1.3"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^7.0.4"
+  }
+}
