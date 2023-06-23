@@ -36,6 +36,18 @@ node dist/index.js
 
 3. The extracted data will be automatically saved in separate Excel files, each corresponding to the respective printer's serial number.
 
+### Supported Printer Models
+
+PrintScribe currently supports data collection from the following printer models:
+
+- HP Laser 408
+- HP Color LaserJet MFP E57540
+- HP LaserJet MFP E52645
+- Samsung M4080FX
+
+Please ensure that the printer models you intend to collect data from are listed in the `printers.json` file and that the necessary configuration is provided to extract the desired information. You can customize the `printers.json` file to include additional printer models by following the provided structure and guidelines.
+
+
 ### Dependencies
 
 PrintScribe relies on the following libraries:
