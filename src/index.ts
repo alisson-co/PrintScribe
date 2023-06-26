@@ -506,13 +506,16 @@ async function readPrintersDataFromFile(): Promise<PrinterData[]> {
   const data = JSON.parse(jsonData);
   const printersData: PrinterData[] = data.printers.flatMap((printer: any) => {
     const printerName = Object.keys(printer)[0];
-    const printerDetails = printer[printerName][0];
-    return {
-      // Return the data to be used to define the model, serial number and address of the printers
-      ipAddress: printerDetails.ipAddress,
-      serialNumber: printerDetails.serialNumber,
-      model: printerDetails.model,
-    };
+    const printerDetailsArray = printer[printerName];
+    if (Array.isArray(printerDetailsArray)) {
+      return printerDetailsArray.map((printerDetails: any) => ({
+        // Return the data to be used to define the model, serial number and address of the printers
+        ipAddress: printerDetails.ipAddress,
+        serialNumber: printerDetails.serialNumber,
+        model: printerDetails.model,
+      }));
+    }
+    return [];
   });
 
   /**
